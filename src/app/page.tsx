@@ -12,6 +12,7 @@ import ColorSequenceChallenge from './puzzles/color-sequence/page';
 import NumberMemoryGame from './puzzles/number-memory/page';
 import PatternCompletionPuzzle from './puzzles/pattern-completion/page';
 import JogoDaMemoria from './puzzles/jogo-da-memoria/page';
+import CompletarPadroes from './puzzles/completar-padroes/page';
 
 export default function Home() {
     return (
@@ -106,7 +107,7 @@ export default function Home() {
                                     title: 'Quebra-cabeças de Lógica',
                                     description:
                                         'Desafie suas habilidades de raciocínio',
-                                    href: '/puzzles/logic',
+                                    href: '/puzzles',
                                     color: 'bg-red-400',
                                 },
                                 {
@@ -114,7 +115,7 @@ export default function Home() {
                                     title: 'Jogos de Memória',
                                     description:
                                         'Melhore suas habilidades de memorização',
-                                    href: '/puzzles/memory',
+                                    href: '/puzzles',
                                     color: 'bg-blue-400',
                                 },
                                 {
@@ -122,14 +123,14 @@ export default function Home() {
                                     title: 'Reconhecimento de Padrões',
                                     description:
                                         'Identifique e complete sequências',
-                                    href: '/puzzles/pattern',
+                                    href: '/puzzles',
                                     color: 'bg-green-400',
                                 },
                                 {
                                     icon: Lightbulb,
                                     title: 'Resolução de Problemas',
                                     description: 'Encontre soluções criativas',
-                                    href: '/puzzles/problem-solving',
+                                    href: '/puzzles',
                                     color: 'bg-yellow-400',
                                 },
                             ].map((category, index) => (
@@ -205,7 +206,7 @@ export default function Home() {
                                     </CardDescription>
                                 </CardHeader>
                                 <CardContent>
-                                    <PatternCompletionPuzzle />
+                                    <CompletarPadroes />
                                 </CardContent>
                             </Card>
                             <Card className="w-full max-w-sm bg-yellow-400 text-white rounded-3xl shadow-lg transition-transform hover:scale-105">
